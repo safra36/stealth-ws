@@ -1,0 +1,58 @@
+{
+  "name": "stealth-ws",
+  "version": "1.0.0",
+  "description": "WebSocket client with TLS fingerprint spoofing",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "postinstall": "node scripts/download-binary.js",
+    "build:go": "node scripts/build-go.js",
+    "prebuild": "node scripts/build-all.js"
+  },
+  "keywords": [
+    "websocket",
+    "stealth",
+    "fingerprint",
+    "tls",
+    "utls",
+    "proxy",
+    "browser-emulation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/stealth-ws.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {
+    "@stealth-ws/linux-x64": "1.0.0",
+    "@stealth-ws/darwin-x64": "1.0.0",
+    "@stealth-ws/win32-x64": "1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "files": [
+    "lib/",
+    "bin/",
+    "prebuilds/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ]
+}
