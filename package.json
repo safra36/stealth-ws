@@ -27,15 +27,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/stealth-ws.git"
+    "url": "https://github.com/safra36/stealth-ws.git"
   },
   "dependencies": {},
   "devDependencies": {},
-  "optionalDependencies": {
-    "@stealth-ws/linux-x64": "1.0.0",
-    "@stealth-ws/darwin-x64": "1.0.0",
-    "@stealth-ws/win32-x64": "1.0.0"
-  },
   "engines": {
     "node": ">=18.0.0"
   },
@@ -49,7 +44,6 @@
   ],
   "files": [
     "lib/",
-    "bin/",
     "prebuilds/",
     "scripts/",
     "README.md",
